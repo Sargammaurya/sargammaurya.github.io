@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.meal img{
+    height: 100%;
+    width: 100%;
+}
+
+.restaurants{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+.res{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.res img{
+    width: 100%;
+    border-radius: 10px;
+    /* padding: 5px; */
+    
+
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+h2{
+    text-align: left;
+    padding-left: 0px;
+    font-size: 50px;
+}
+
+h6{
+    text-align: left;
+    padding-left: 0px;
+    font-size: 30px;
+}
+.desc{
+    text-align: left;
+    padding: 10px;
+    padding-left: 0px;
+    
+}
+.menutitle{
+    padding-top: 50px;
+    text-align: center;
+}
+.category{
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    padding-left: 100px;
+}
+.category .list-items{
+    width: 90%;
+    position: relative;
+    margin-top: 50px;
+}
+
+.category .list-items h3{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-bottom: 70px;
+
+}
+.category .list-items .card-list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 50px;
+
+}
+.category .card-list .card{
+    width: 200px;
+    height: auto;
+    display: block;
+    padding: 10px;
+    outline: 2px solid tomato;
+    border-radius: 5px;
+    position: relative;
+    background-color: #ffffff;
+
+}
+.category .card-list .card img{
+    width: 100px;
+    height: 50%;
+    bottom: 140px;
+    left: 50px;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    box-shadow: 0 20px 20px tomato;
+    border-radius: 50%;
+
+}
+.category .card-list .card .food-title{
+    padding: 40px 0 10px;
+}
+.category .card-list .card .food-title h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: sans-serif;
+
+}
+.category .card .desc-food p{
+    font-size: 13px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+.category .card .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.category .card .price span .plus-icon{
+    color: tomato;
+    font-size: 20px;
+    cursor: pointer;
+} 
+
+
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    background-color: #bdbdbd;
+    padding: 35px;
+    font-family: poppins;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: poppins;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}

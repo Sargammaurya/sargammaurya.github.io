@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding: 0;
+}
+/* p.sargam{
+    color: aqua;
+ 
+}
+
+#maurya{
+    color: rgb(161, 110, 255);
+    font-family: sans-serif;
+    font-size: 50px;
+    background-color: aqua;
+    border-width: 4px;
+    border-color: blue;
+    border-style: solid;
+    border-radius: 200px;
+    background-image: url('gallary_2.jpg') */
+/* } */
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("gallary_2.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+#logo{
+    size: 5px;
+}
+nav {
+    display:flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: poppins;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+.Text-Box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.Text-Box h1{
+    font-size: 62px;
+}
+.Text-Box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
